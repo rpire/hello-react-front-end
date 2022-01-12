@@ -1,6 +1,6 @@
-import { applyMiddleware, combineReducers, createStore } from "redux";
+import { applyMiddleware, combineReducers, createStore } from 'redux';
 import thunk from 'redux-thunk';
-import greetingsReducer from "./greetings/greetings";
+import greetingsReducer from './greetings/greetings';
 
 const rootReducer = combineReducers({
   greeting: greetingsReducer,
@@ -8,7 +8,7 @@ const rootReducer = combineReducers({
 
 const store = createStore(
   rootReducer,
-  applyMiddleware(thunk)
+  applyMiddleware(thunk),
 );
 
 export default store;

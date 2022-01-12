@@ -1,6 +1,6 @@
 const LOAD_GREETING = 'App/greetings/LOAD_GREETING';
 
-const url = 'https://rpire-hrbe.herokuapp.com/v1/greetings';
+const url = 'http://localhost:3000/v1/greetings';
 
 const initialState = {
   id: 777,
@@ -16,8 +16,8 @@ export const getGreetings = () => async (dispatch) => {
   await fetch(url)
     .then((response) => response.json())
     .then((greeting) => dispatch(loadGreeting(greeting)))
-    .catch((error) => console.log(error));
-}
+    .catch((error) => error);
+};
 
 const greetingsReducer = (state = initialState, action) => {
   switch (action.type) {
