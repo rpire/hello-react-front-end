@@ -20,7 +20,7 @@ This application has `Home` page and a `Greet` page. You can go to the `Greet` b
 - Start the project by running `npm start`.
 
 - Make sure the `API` is ready to serve your front end app!
-Go to [this repo](repo,repo) and start the back end following the instructions.
+Go to [https://github.com/rpire/hello-rails-back-end](https://github.com/rpire/hello-rails-back-end) and start the back end by following the instructions.
 
 - Navigate to the `greetings` page using the links in the website and click on the `Be greeted!` button to generate a new greet.
 
